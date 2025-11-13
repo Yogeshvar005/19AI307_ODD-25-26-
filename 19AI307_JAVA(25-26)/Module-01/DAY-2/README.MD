@@ -16,8 +16,6 @@ Room assignment rules:
 • Any invalid gender/subject input → print "Invalid"
 
 Example:
-
-
 ## Aim
 
 To write a Java program that implements conditional statements to assign exam rooms based on user-provided gender and subject code.
@@ -91,4 +89,5 @@ public class ExamRoomAssignment {
 ## Result
 
 The Java program to implement conditional statements and assign exam rooms based on gender and subject code was successfully executed.
+
 
