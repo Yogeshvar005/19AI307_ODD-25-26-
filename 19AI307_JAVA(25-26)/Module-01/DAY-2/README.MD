@@ -1,93 +1,77 @@
-# Ex.No: 1(B) — Conditional Statement
-## Question
+# Ex.No:1(B) CONDITIONAL STATEMENT
 
-Write a Java program to assign an exam room based on gender and subject code.
+## QUESTION:
+In a haunted house, lights turn on or off based on the hour of entry:
 
-Room assignment rules:
+If the hour is even and between 2 and 6 (inclusive), lights flicker.
 
-• Male taking subject 1 or 2 → print "A"
+If the hour is odd and between 7 and 11, lights stay off.
 
-• Female taking subject 1 → print "B"
+If the hour is 12, lights turn red.
 
-• Female taking subject 2 → print "C"
+Otherwise, the house is dark.
 
-• All others (valid subject inputs) → print "Admin"
 
-• Any invalid gender/subject input → print "Invalid"
+## AIM:
+To write a Java program that uses conditional statements to determine the state of lights in a haunted house based on the hour of entry.
 
-Example:
-## Aim
+## ALGORITHM :
+1. Start the program.
 
-To write a Java program that implements conditional statements to assign exam rooms based on user-provided gender and subject code.
+2. Import the necessary package java.util.*.
 
-## Algorithm
+3. Create a Scanner object to read the hour input from the user.
 
-• Start the program.
-• Import the necessary package java.util.*.
-• Read gender input as a character.
-• Read subject code as an integer.
-• Convert gender to lowercase.
-• Use conditional statements (if–else) to check:
-      ・ Male with subject 1 or 2 → Room A
-      ・ Female with subject 1 → Room B
-      ・ Female with subject 2 → Room C
-      ・ Valid inputs not listed above → Admin
-      ・ Invalid gender/subject → Invalid
-• Print the appropriate room.
-• End the program.
+4. Read the hour as an integer.
 
-## Program
-```
+5. Check if the hour is even and between 2 and 6 (inclusive):
+
+6. Display “Lights flicker”.
+
+7. Else if the hour is odd and between 7 and 11:
+
+8. Display “Lights stay off”.
+
+9. Else if the hour is 12:
+
+10. Display “Lights turn red”.
+ 
+11. Display “The house is dark”.
+
+12. End the program.
+
+## PROGRAM:
+ ```
 Program to implement a conditional statement using Java
-Developed by: Yogeshvar M
-RegisterNumber: 212222230180 
+Developed by: YOGESHVAR M
+Register Number:212222230180
 ```
 
-### Source Code
-```java
-import java.util.Scanner;
-
-public class ExamRoomAssignment {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
-        char gender = sc.next().toLowerCase().charAt(0);  
-        int subject = sc.nextInt();
-
-        String room;
-
-        if (gender == 'm') {
-            if (subject == 1 || subject == 2) {
-                room = "A";
-            } else if (subject >= 1 && subject <= 9) {
-                room = "Admin";
-            } else {
-                room = "Invalid";
-            }
-        } else if (gender == 'f') {
-            if (subject == 1) {
-                room = "B";
-            } else if (subject == 2) {
-                room = "C";
-            } else if (subject >= 1 && subject <= 9) {
-                room = "Admin";
-            } else {
-                room = "Invalid";
-            }
+## Sourcecode.java:
+```
+import java.util.*;
+public class Demo
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+       if (a >= 2 && a <= 6 && a % 2 == 0) {
+            System.out.println("Lights flicker");
+        } else if (a>= 7 && a <= 11 && a % 2 != 0) {
+            System.out.println("Lights off");
+        } else if (a == 12) {
+            System.out.println("Lights red");
         } else {
-            room = "Invalid";
+            System.out.println("Dark house");
         }
-
-        System.out.println(room);
-
-        sc.close();
     }
 }
 ```
-## Output
 
-## Result
+## OUTPUT:
 
-The Java program to implement conditional statements and assign exam rooms based on gender and subject code was successfully executed.
+<img width="486" height="294" alt="Screenshot 2025-11-14 101547" src="https://github.com/user-attachments/assets/a64529b4-061c-436d-8ea4-55157b6e41b9" />
 
-
+## RESULT:
+Thus, the Java program to implement conditional statements for the haunted house lighting system was successfully executed.
